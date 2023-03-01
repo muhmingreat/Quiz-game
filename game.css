@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+
+
+body {
+    color: #fff;
+}
+
+.choice-container {
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 70%;
+    border-radius: 4px;
+    background: rgba(18, 93, 255);
+    font-size: 3rem;
+    min-width: 60rem;
+}
+
+.choice-container:hover {
+    cursor: pointer;
+    box-shadow: 0, 0.4rem 1.4rem rgba(6, 183, 247, 0.5);
+    transform: scale(1.02);
+    transform: transform 100ms;
+}
+
+.choice-prefix {
+    padding: 2rem2.5rem;
+    color: white;
+}
+
+.choice-text {
+    padding: 2rem;
+    width: 50%;
+}
+
+.correct {
+
+    background: linear-gradient(32deg, rgba(11, 223, 36)0%, rgb(41, 232, 111)100%);
+}
+
+.incorrect {
+
+    background: linear-gradient(32deg, rgb(229, 6, 6)0%, rgb(224, 11, 11, 1)100%);
+}
+
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+.hud-main-text {
+    text-align: center;
+}
+
+#progressBar {
+    width: 20rem;
+    height: 2rem;
+    border: 0.2rem solid rgb(11, 233, 36);
+    margin: 2rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#progressBarFull {
+    height: 100%;
+    background: rgb(11, 233, 36);
+    width: 0;
+}
+
+@media screen and(max-width: 500px) {
+    .choice-container {
+        max-width: 20rem;
+    }
+}
